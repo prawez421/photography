@@ -17,7 +17,12 @@ import { FaInstagram, FaFacebookF } from "react-icons/fa";
 const navLinks = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
-  { name: "Portfolio", href: "/portfolio" },
+  // { name: "Portfolio", href: "/portfolio" },
+  {
+    name: "Portfolio",
+    href: "https://prawezw3s.netlify.app/",
+    external: true,
+  },
   { name: "Gallery", href: "/gallery" },
   { name: "Services", href: "/services" },
   { name: "Contact", href: "/contact" },
@@ -128,6 +133,9 @@ export default function Navbar() {
                 <Link
                   key={link.href}
                   href={link.href}
+                  // portfolio mera h us k bad remove 
+                  target={link.name === "Portfolio" ? "_blank" : undefined}
+  rel={link.name === "Portfolio" ? "noopener noreferrer" : undefined}
                   className="relative py-3 text-[13px] font-medium tracking-wide group"
                 >
                   <span

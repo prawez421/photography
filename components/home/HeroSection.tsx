@@ -177,7 +177,7 @@ export default function HeroSection() {
             className="relative mx-auto aspect-[4/5] w-full max-w-[530px] overflow-hidden rounded-t-[220px] border border-[#FFC400]/25 bg-[#10242b] sm:rounded-t-[280px]"
           >
             <Image
-              src="/images/home/photographer.png"
+              src="/images/home/photographer1.png"
               alt="SamPhotography professional photographer"
               fill
               priority
